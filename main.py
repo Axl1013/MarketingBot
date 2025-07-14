@@ -28,7 +28,7 @@ TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 OPAI_API_KEY = os.getenv('OPAI_API_KEY')
 
 # 🛠️ Setup
-opai.api_key = OPAI_API_KEY
+openai.api_key = OPAI_API_KEY
 nest_asyncio.apply()
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
