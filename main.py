@@ -25,10 +25,10 @@ def keep_alive():
 
 # 🔑 API-sleutels invullen
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OPAI_API_KEY = os.getenv('OPAI_API_KEY')
 
 # 🛠️ Setup
-openai.api_key = OPENAI_API_KEY
+openai.api_key = OPAI_API_KEY
 nest_asyncio.apply()
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
