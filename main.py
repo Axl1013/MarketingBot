@@ -23,8 +23,8 @@ def keep_alive():
 
 
 # 🔑 API-sleutels invullen
-TELEGRAM_BOT_TOKEN = "8052321580:AAHv-nmFKelH7NDl52ngY5rmdIPVjn5FclA"
-OPENAI_API_KEY = "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"
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # 🛠️ Setup
 openai.api_key = OPENAI_API_KEY
